@@ -1,0 +1,29 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<mat-toolbar color="primary">   
+    <mat-toolbar-row>
+      <span>EarlyCravings</span>
+      <span class="example-spacer"></span>
+      <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon" [matMenuTriggerFor]="menu">menu</mat-icon>
+      <mat-menu #menu="matMenu">
+          <button mat-menu-item>Item 1</button>
+          <button mat-menu-item>Item 2</button>
+      </mat-menu>
+
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  
+  <mat-card>
+  <mat-card-header>Searching For...</mat-card-header>
+
+  <div class="input">
+  <input class="input_box" placeholder="Search for your favourite food..." >
+  </div>
+
+  </mat-card> 
+
+
+
+<router-outlet></router-outlet>
